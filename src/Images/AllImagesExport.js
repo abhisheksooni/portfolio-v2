@@ -10,8 +10,16 @@ import twitter from './Media/twitter.svg'
  import redux from './Skills/redux-color.svg'
  import tailwindcss from './Skills/tailwindcss-color.svg'
  import js from './Skills/javascript-color.svg'
+ import git from './Skills/git.svg'
+//  import github from './Skills/github.svg'
+ import nextjs from './Skills/nextdotjs.svg'
+ import figma from './Skills/figma.svg'
+ import netlify from './Skills/netlify.svg'
+ import vercel from './Skills/vercel.svg'
+ import html5 from './Skills/html5.svg'
 
-
+// certificate
+import html from './certificates/19f184cf-dbd1-4704-849c-07eaf106b363.png'
 export{
     // media
 gmail,
@@ -25,5 +33,14 @@ react,
 reactrouter,
 redux,
 tailwindcss,
-js
+js,
+nextjs,
+vercel,
+figma,
+netlify,
+git,
+html5,
+
+// certificates
+html,
 }
