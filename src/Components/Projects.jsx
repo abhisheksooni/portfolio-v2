@@ -7,17 +7,20 @@ function Projects({ projectImage = semp, Name = 'add project name', skillsNumber
     <>
       <Link to={'prjects'}>
 
-        <div className="max-w-[450px]  h-full max-h-[500px] overflow-y-hidden relative rounded-3xl">
+<div className="">
+  
+</div>
+        <div className="max-w-[100%]  h-full max-h-[650px] overflow-y-hidden relative rounded-3xl mb-10">
           {/* *:relative */}
-          <div className="mm max-w-full h-0  z-20 ">
-            <div className="flex flex-wrap-reverse absolute bottom-[4%] gap-2   ml-4 ">
-              {/* Project Name top-[395px] */}
-              <div className=" text-xl py-2 px-5 max-w-[305px] max-h-[159.5px] backdrop-blur-md bg-black/30 rounded-full">
+          <div className="mm max-w-full h-0 ">
+            <div className="flex flex-wrap-reverse absolute bottom-[4%] gap-2  items-center ml-4 ">
+              {/* Project Name */}
+              <div className=" text-2xl py-1 px-4 lg:py-3 lg:px-5 max-w-[305px] max-h-[159.5px] border  backdrop-blur-md bg-black/30 rounded-full">
                 <span className=''>{Name}</span>
               </div>
 
               {/* project use language/ */}
-              <div className="flex *:backdrop-blur-md *:bg-color3/10 *:rounded-full relative ">
+              <div className="flex *:backdrop-blur-md *:bg-color3/10 *:rounded-full relative *:border">
                 <div className=" w-[40px] h-[40px] flex items-center justify-center  p-1.5 relative z-[100]">
                   <img src={js} className='w-[29px] rounded-full' alt="" />
                 </div>
@@ -36,7 +39,7 @@ function Projects({ projectImage = semp, Name = 'add project name', skillsNumber
             </div>
           </div>
           {/* project images */}
-          <img src={projectImage} className='' alt="" />
+          <img src={projectImage} className='w-full' alt="" />
         </div>
       </Link>
     </>
