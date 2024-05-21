@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Projects({ projectImage = semp, Name = 'add project name', skillsNumber = 1 }) {
   return (
     <>
-      <Link to={'prjects'}>
+      <Link to={'project'}>
 
 <div className="">
   
