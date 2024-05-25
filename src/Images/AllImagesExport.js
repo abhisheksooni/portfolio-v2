@@ -2,6 +2,7 @@ import gmail from './Media/gmail-color.svg'
 import github from './Media/github.svg'
 import linkedin from './Media/linkedin.svg'
 import twitter from './Media/twitter.svg'
+import whatsapp from './Media/whatsapp.svg'
 
 // skills
  import css from './Skills/css3-color.svg'
@@ -26,6 +27,7 @@ gmail,
 github,
 linkedin,
 twitter,
+whatsapp,
 
 // skills
 css,
