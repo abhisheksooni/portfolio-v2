@@ -5,11 +5,7 @@ import { Link } from 'react-router-dom';
 function Projects({ projectImage = semp, Name = 'add project name', skillsNumber = 1 }) {
   return (
     <>
-      <Link to={'project'}>`  `
-
-<div className="">
-  
-</div>
+      <Link to={'project'}>
         <div className="max-w-[100%]  lg:h-full max-h-[650px] overflow-y-hidden relative rounded-3xl mb-10">
           {/* *:relative */}
           <div className="mm max-w-full h-0 ">

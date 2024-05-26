@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 .avtar{
  background-image: url('./Images/abtar.png');

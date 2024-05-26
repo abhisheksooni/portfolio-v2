@@ -1,16 +1,45 @@
 import React, { useState } from 'react'
 import semp from '../Images/semp.png';
-import { MoveRight, X } from 'lucide-react';
-import { css, figma, github, html, js, react, tailwindcss, git, html5, reactrouter, redux, gmail, whatsapp, linkedin } from '../Images/AllImagesExport';
+import { Link, MoveRight, X } from 'lucide-react';
+import { css, figma, github, html, js, react, tailwindcss, git, html5, reactrouter, redux, gmail, whatsapp, linkedin, pwskill, webDesign } from '../Images/AllImagesExport';
 import { CertificatesShow, Projects, SkillsIcons } from "../Components/AllExport";
+import { NavLink } from 'react-router-dom';
+
 function Home() {
 
   const [certificateShow, SetcertificateShow] = useState(false)
+  const [certificateName, SetcertificateName] = useState('')
+
+
+
+  function WhatsAppLink() {
+    const phoneNumber =  '+917580996325';
+    const message = 'hello ji' ;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+  
+    return (
+      <NavLink to={whatsappUrl} className="bg-[#25D366] p-3.5 lg:p-4 hover:bg-[#25D366]">
+        <img src={whatsapp} alt="" />
+      </NavLink>
+    );
+  }
+
+const EmailLink = ()=>{
+  const email = 'abhisheksoni.as444@gmail.com';
+  const subject = 'Hello Abhishek';
+  const body = 'Hi there, I am intresting your work';
+const maintoUrl =`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+
+return(
+  <NavLink to={maintoUrl} className=" p-3.5 lg:p-4  hover:bg-[#EA4335]">
+  <img src={gmail} alt="" />
+</NavLink>
+)
+  }
+
   return (
     <>
-   <dir>
-  <input type="text" />
-   </dir>
     <section className=' relative lg:flex w-full gap-10 max-w-[1800px] md:px-[40px] xl:px-[80px] lg:py-4 mx-auto'>
       {/* avtar box mobile */}
       <div className=" flex justify-center text-color3 mt-20 mb-10 lg:hidden">
@@ -61,30 +90,31 @@ function Home() {
             <span className="font-semibold text-xl ">My Mentor </span>
           </div>
           <div className=" *:mb-3 mt-5 flex gap-4">
-            <div className="*:mb-3">
+            <div className="*:mb-3 cursor-pointer">
               <div className=" flex items-center gap-5">
                 <div className="w-[65px] h-[65px] rounded-full bg-black">
-                  <img src="https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2=s160-c-k-c0x00ffffff-no-rj" className='rounded-full' alt="" />
+                  <img src="https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2=s160-c-k-c0x00ffffff-no-rj" className='rounded-full hover:scale-110' alt="" />
                 </div>
-                <span className='text-lg '>Hitesh Choudhary</span>
+                <NavLink  to={'https://www.youtube.com/@chaiaurcode'} target='_blank' className={`text-lg hover:text-red-500 font-semibold`}>Hitesh Choudhary</NavLink>
               </div>
               <div className=" flex items-center gap-5">
                 <div className="w-[65px] h-[65px] rounded-full bg-black">
-                  <img src="https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2=s160-c-k-c0x00ffffff-no-rj" className='rounded-full' alt="" />
+                  <img src="https://yt3.googleusercontent.com/H3djB_hVq1Ka1auGf5eCi-wUfwI-kctMW-skVqrXnJwAvqQxI8XSw_ErmyUMNEQmMIxcQgNhNGU=s160-c-k-c0x00ffffff-no-rj" className='rounded-full hover:scale-110' alt="" />
                 </div>
-                <span className='text-lg '>Hitesh Choudhary</span>
+                <NavLink  to={'https://www.youtube.com/@piyushgargdev'} target='_blank' className={`text-lg hover:text-red-500 font-semibold`}>Piyush Garg</NavLink>
               </div>
               <div className=" flex items-center gap-5">
                 <div className="w-[65px] h-[65px] rounded-full bg-black">
-                  <img src="https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2=s160-c-k-c0x00ffffff-no-rj" className='rounded-full' alt="" />
+                  <img src="https://pbs.twimg.com/profile_images/1522060025854066688/IZs_lylH_400x400.png" className='rounded-full hover:scale-110' alt="" />
                 </div>
-                <span className='text-lg '>Hitesh Choudhary</span>
+                <NavLink to={'https://www.youtube.com/@CodeWithHarry'} target='_blank'  className={`text-lg hover:text-red-500 font-semibold`}>Haris Ali Khan | CodeWithHarry</NavLink >
               </div>
             </div>
 
 
           </div>
         </div>
+
         {/* Contect */}
         <div className=" px-6 py-5">
           <div className="flex items-center gap-2.5">
@@ -93,20 +123,19 @@ function Home() {
           </div>
           {/* icons */}
           <div className="*:bg-black *:rounded-full mt-5 flex gap-3 flex-wrap *:max-w-[80px] *:w-full *:max-h-[80px]  *:cursor-pointer">
-            <div className="bg-black p-3  hover:bg-[#0A66C2] ">
-              <img src={linkedin} className='rounded-full  alt=""' />
-            </div>
-
-            <div className="bg-black p-3.5 lg:p-4  ">
+          <NavLink to={'https://github.com/abhisheksooni'} target='_blank' className="bg-black p-3.5 lg:p-4  ">
               <img src={github} alt="" />
-            </div>
+            </NavLink>
+            
+            <NavLink to={'https://www.linkedin.com/in/abhisheksooni81/'} target='_blank' className="bg-black p-3  hover:bg-[#0A66C2] ">
+              <img src={linkedin} className='rounded-full  alt=""' />
+            </NavLink>
 
-            <div className="bg-[#25D366] p-3.5 lg:p-4  hover:bg-[#25D366]">
-              <img src={whatsapp} alt="" />
-            </div>
-            <div className=" p-3.5 lg:p-4  hover:bg-[#EA4335]">
-              <img src={gmail} alt="" />
-            </div>
+           {/* whatsapp link function */}
+            <WhatsAppLink/>
+           {/* Email link function */}
+            <EmailLink/>
+           
           </div>
         </div>
       </section>
@@ -139,7 +168,7 @@ function Home() {
 
         </div>
         {/* Certificates */}
-        <div className="bg-color2/40 lg:w-[95%] rounded-3xl px-5 lg:px-10 py-6 mb-10 ">
+        <div className="bg-color2/40 lg:w-[95%] rounded-3xl px-5 lg:px-10 py-6 mb-10  ">
 
           <div className="flex items-center justify-between">
             <div className="lg:px-4 flex items-center gap-4">
@@ -147,20 +176,33 @@ function Home() {
               <p className="font-semibold text-2xl ">Certificates </p>
             </div>
 
-            <button className=' bg-black px-5 py-1 rounded-full '><MoveRight /></button>
+            <NavLink to={'certificates'} className=' bg-black px-5 py-1 rounded-full flex gap-3'> <span className='hidden md:flex'>more. </span><MoveRight /></NavLink>
           </div>
 
-          <div className="lg:*:max-w-[320px] *:cursor-pointer mt-6 *:rounded-xl flex gap-5 justify-center">
-            <div onClick={()=>SetcertificateShow(true)} className="">
-              <img src={html}  className='rounded-xl' alt="" />
+          <div className="lg:*:max-w-[320px] justify-start *:min-w-[200px] lg:*:min-w-[300px] *:cursor-pointer mt-6 *:rounded-xl flex gap-5  overflow-x-scroll hover:*:scale-[0.98]">
+            <div onClick={()=>{
+              SetcertificateName(pwskill)
+              SetcertificateShow(true)
+              window.scroll({top:0, behavior:'smooth'})
+            }} className=" bg-black p-1 m-auto ">
+              <img src={pwskill}  className='rounded-sm ' alt="" />
             </div>
 
-            <div className="">
+            <div onClick={()=>{
+              SetcertificateName(html)  
+              SetcertificateShow(true)
+              window.scroll({top:0, behavior:'smooth'})
+            }} className="">
               <img src={html} className='rounded-xl' alt="" />
             </div>
+            
 
-            <div className=" hidden lg:inline-block">
-              <img src={html} className='rounded-xl' alt="" />
+            <div onClick={()=>{
+              SetcertificateShow(true)
+              SetcertificateName(webDesign)  
+              window.scroll({top:0, behavior:'smooth'})
+            }} className="">
+              <img src={webDesign} className='rounded-xl' alt="" />
             </div>
 
           </div>
@@ -190,7 +232,7 @@ function Home() {
             <div className={` h-[11px] w-[11px] bg-color3 lg:mt-[4.5px] rounded-full`}></div>
             <span className="font-semibold text-2xl  ">Projects </span>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 ">
             <Projects />
             <Projects />
             <Projects />
@@ -199,12 +241,18 @@ function Home() {
         </div>
       </section>
 
-      {/* certificate */}
-
-   <section>  </section>
-      
-      {console.log(certificateShow)}
     </section>
+
+   {/* certificate showing section */}
+
+<section  className={`${certificateShow?'flex overflow-y-hidden':'hidden'}  flex-col  absolute p-5 top-0 z-[1000] bg-color2/40 backdrop-blur-md w-[100%] h-[100%]`}>
+    <div onClick={()=>SetcertificateShow(false)} className="absolute right-5 cursor-pointer"><X size={50} color='red'/></div>
+ 
+    <img src={certificateName} className='max-w-[1125px] w-full  mx-auto mt-[35vh] md:mt-12 ' alt="" />
+    
+     </section>
+{console.log(certificateName)}
+
     </>
   )
 }
