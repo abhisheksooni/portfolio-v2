@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import semp from '../Images/semp.png';
 import { Link, MoveRight, X } from 'lucide-react';
-import { css, figma, github, html, js, react, tailwindcss, git, html5, reactrouter, redux, gmail, whatsapp, linkedin, pwskill, webDesign } from '../Images/AllImagesExport';
+import { css, figma, github, html, js, react, tailwindcss, git, html5, reactrouter, redux, gmail, whatsapp, linkedin, pwskill, webDesign, Project1 } from '../Images/AllImagesExport';
 import { CertificatesShow, Projects, SkillsIcons } from "../Components/AllExport";
 import { NavLink } from 'react-router-dom';
 
@@ -233,7 +233,7 @@ return(
             <span className="font-semibold text-2xl  ">Projects </span>
           </div>
           <div className="mt-8 ">
-            <Projects />
+            <Projects Name='FORCE Brand'  projectImage={Project1} projectlink='https://e-commerce-mauve-omega.vercel.app/' />
             <Projects />
             <Projects />
             <Projects />

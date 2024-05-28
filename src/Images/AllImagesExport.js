@@ -23,6 +23,12 @@ import whatsapp from './Media/whatsapp.svg'
 import html from './certificates/19f184cf-dbd1-4704-849c-07eaf106b363.png'
 import pwskill from './certificates/0cbc75a9-a892-4f70-bcc5-0adc85265ced.png'
 import webDesign from './certificates/79f89a47ad214256a0a1bd6dd43f5c04_page-0001.jpg'
+
+// Projects
+import Project1 from './Projects/e-commerce-1.png'
+
+
+
 export{
     // media
 gmail,
@@ -49,4 +55,8 @@ html5,
 html,
 pwskill,
 webDesign,
+
+
+// projects
+Project1,
 }

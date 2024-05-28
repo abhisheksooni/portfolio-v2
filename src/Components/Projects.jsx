@@ -2,11 +2,11 @@ import React from 'react'
 import semp from '../Images/semp.png';
 import { js, react, tailwindcss } from '../Images/AllImagesExport';
 import { Link } from 'react-router-dom';
-function Projects({ projectImage = semp, Name = 'add project name', skillsNumber = 1 }) {
+function Projects({ projectImage = semp, Name = 'add project name', skillsNumber = 1,projectlink='' }) {
   return (
     <>
-      <Link to={'project'}>
-        <div className="max-w-[100%]  lg:h-full max-h-[650px] overflow-y-hidden relative rounded-3xl mb-10">
+      <Link target='_blank' to={projectlink}>
+        <div className="max-w-[100%]  lg:h-full max-h-[650px] overflow-y-hidden relative rounded-3xl mb-10 hover:scale-[0.98] transition-all duration-75 ease-linear">
           {/* *:relative */}
           <div className="mm max-w-full h-0 ">
             <div className="flex flex-wrap-reverse absolute bottom-[4%] gap-2  items-center ml-4 ">
@@ -29,7 +29,7 @@ function Projects({ projectImage = semp, Name = 'add project name', skillsNumber
                 </div>
                 <div className=" w-[40px] h-[40px] flex items-center justify-center p-1.5 relative -left-[49px] z-[70] text-black font-semibold">
                   {/* <img src={tailwindcss} className='w-[29px]' alt="" /> */}
-                  +{skillsNumber}
+                  {'+' + skillsNumber}
                 </div>
               </div>
             </div>
