@@ -1,41 +1,37 @@
 import React from 'react'
 import semp from '../Images/semp.png';
-import { js, react, tailwindcss } from '../Images/AllImagesExport';
+import { github, js, react, reactrouter, redux, tailwindcss } from '../Images/AllImagesExport';
 import { Link } from 'react-router-dom';
-function Projects({ projectImage = semp, Name = 'add project name', skillsNumber = 1,projectlink='' }) {
+import { ArrowBigRightDash,ArrowUpRight } from 'lucide-react';
+function Projects({ projectImage = semp, Name = 'add project name', skillsNumber = 1,projectlink='',addSkills }) {
   return (
     <>
-      <Link target='_blank' to={projectlink}>
-        <div className="max-w-[100%]  lg:h-full max-h-[650px] overflow-y-hidden relative rounded-3xl mb-10 hover:scale-[0.98] transition-all duration-75 ease-linear">
-          {/* *:relative */}
-          <div className="mm max-w-full h-0 ">
-            <div className="flex flex-wrap-reverse absolute bottom-[4%] gap-2  items-center ml-4 ">
-              {/* Project Name */}
-              <div className=" text-lg  lg:text-2xl py-1 px-4 lg:py-3 lg:px-5 max-w-[305px] max-h-[159.5px]   backdrop-blur-sm bg-color2/40 rounded-full">
-                <span className='text-black'>{Name}</span>
-              </div>
-
-              {/* project use language/ */}
-              <div className="flex *:backdrop-blur-md *:bg-color3/10 *:rounded-full relative *:border">
-                <div className=" w-[40px] h-[40px] flex items-center justify-center  p-1.5 relative z-[100]">
-                  <img src={js} className='w-[29px] rounded-full' alt="" />
-                </div>
-
-                <div className=" w-[40px] h-[40px] flex items-center justify-center p-1.5 relative -left-5 z-[90]">
-                  <img src={react} className='w-[29px]' alt="" />
-                </div>
-                <div className=" w-[40px] h-[40px] flex items-center justify-center p-1.5 relative -left-9 z-[80]">
-                  <img src={tailwindcss} className='w-[29px]' alt="" />
-                </div>
-                <div className=" w-[40px] h-[40px] flex items-center justify-center p-1.5 relative -left-[49px] z-[70] text-black font-semibold">
-                  {/* <img src={tailwindcss} className='w-[29px]' alt="" /> */}
-                  {'+' + skillsNumber}
-                </div>
-              </div>
-            </div>
-          </div>
+      <Link target='_blank' to={projectlink} className='xl:max-w-[48%]' >
+        <div className=" overflow-y-hidden relative rounded-3xl bg-color2/40 md:px-3 md:py-3 p-1.5 mb-3 md:mb-8">
           {/* project images */}
-          <img src={projectImage} className='w-full' alt="" />
+          <img src={projectImage} className='w-[100%] rounded-3xl ' alt="" />
+
+          <div className="flex flex-wrap mx-4 justify-between  items-center my-1 md:my-3">
+
+{/* Project Name */}
+<div className=" text-lg text-center mx-auto font-medium lg:text-2xl py-1.5 px-5 lg:py-3 lg:px-7 max-w-[305px] w-full max-h-[159.5px] backdrop-blur-sm bg-color3 rounded-full mt-3  hover:bg-white">
+<span className='text-black flex items-center justify-evenly '>{Name}  <ArrowUpRight size={30} /></span>
+
+</div>
+{/* <div className=" flex py-1 px-5 lg:py-1.5 lg:px-7 max-w-[305px] max-h-[159.5px] backdrop-blur-sm bg-color2 rounded-full mt-3 border-2 hover:border-[#fff] border-color2">
+<img src={github} className='max-w-[48px] w-full' alt="" />
+
+</div> */}
+{/* skills icons */}
+{/* <div className="ml-4 flex flex-wrap max-w-[50px] *:m-[1px] gap-[2px] w-full">
+<img src={react} className='w-[18px]' alt="" />
+<img src={tailwindcss} className='w-[18px]' alt="" />
+<img src={redux} className='w-[18px]' alt="" />
+<img src={reactrouter} className='w-[18px]' alt="" />
+</div> */}
+
+</div>    
+
         </div>
       </Link>
     </>

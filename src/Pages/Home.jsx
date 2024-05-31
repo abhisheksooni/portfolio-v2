@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import semp from '../Images/semp.png';
 import { Link, MoveRight, X } from 'lucide-react';
-import { css, figma, github, html, js, react, tailwindcss, git, html5, reactrouter, redux, gmail, whatsapp, linkedin, pwskill, webDesign, Project1 } from '../Images/AllImagesExport';
+import { css, figma, github, html, js, react, tailwindcss, git, html5, reactrouter, redux, gmail, whatsapp, linkedin, pwskill, webDesign, Project1, Project2 } from '../Images/AllImagesExport';
 import { CertificatesShow, Projects, SkillsIcons } from "../Components/AllExport";
 import { NavLink } from 'react-router-dom';
 
@@ -90,22 +90,22 @@ return(
             <span className="font-semibold text-xl ">My Mentor </span>
           </div>
           <div className=" *:mb-3 mt-5 flex gap-4">
-            <div className="*:mb-3 cursor-pointer">
-              <div className=" flex items-center gap-5">
+            <div className="*:mb-3 cursor-pointer transition-all ">
+              <div className=" flex items-center gap-5 *:duration-100">
                 <div className="w-[65px] h-[65px] rounded-full bg-black">
-                  <img src="https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2=s160-c-k-c0x00ffffff-no-rj" className='rounded-full hover:scale-110' alt="" />
+                  <img src="https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2=s160-c-k-c0x00ffffff-no-rj" className='rounded-full hover:scale-110 duration-100' alt="" />
                 </div>
-                <NavLink  to={'https://www.youtube.com/@chaiaurcode'} target='_blank' className={`text-lg hover:text-red-500 font-semibold`}>Hitesh Choudhary</NavLink>
+                <NavLink  to={'https://www.youtube.com/@chaiaurcode'} target='_blank' className={`text-lg hover:text-red-500 font-semibold `}>Hitesh Choudhary</NavLink>
               </div>
-              <div className=" flex items-center gap-5">
+              <div className=" flex items-center gap-5 *:duration-100">
                 <div className="w-[65px] h-[65px] rounded-full bg-black">
-                  <img src="https://yt3.googleusercontent.com/H3djB_hVq1Ka1auGf5eCi-wUfwI-kctMW-skVqrXnJwAvqQxI8XSw_ErmyUMNEQmMIxcQgNhNGU=s160-c-k-c0x00ffffff-no-rj" className='rounded-full hover:scale-110' alt="" />
+                  <img src="https://yt3.googleusercontent.com/H3djB_hVq1Ka1auGf5eCi-wUfwI-kctMW-skVqrXnJwAvqQxI8XSw_ErmyUMNEQmMIxcQgNhNGU=s160-c-k-c0x00ffffff-no-rj" className='rounded-full hover:scale-110 duration-100' alt="" />
                 </div>
                 <NavLink  to={'https://www.youtube.com/@piyushgargdev'} target='_blank' className={`text-lg hover:text-red-500 font-semibold`}>Piyush Garg</NavLink>
               </div>
-              <div className=" flex items-center gap-5">
+              <div className=" flex items-center gap-5 *:duration-100">
                 <div className="w-[65px] h-[65px] rounded-full bg-black">
-                  <img src="https://pbs.twimg.com/profile_images/1522060025854066688/IZs_lylH_400x400.png" className='rounded-full hover:scale-110' alt="" />
+                  <img src="https://pbs.twimg.com/profile_images/1522060025854066688/IZs_lylH_400x400.png" className='rounded-full hover:scale-110 duration-100' alt="" />
                 </div>
                 <NavLink to={'https://www.youtube.com/@CodeWithHarry'} target='_blank'  className={`text-lg hover:text-red-500 font-semibold`}>Haris Ali Khan | CodeWithHarry</NavLink >
               </div>
@@ -122,7 +122,7 @@ return(
             <span className="font-semibold text-xl ">Contect :- </span>
           </div>
           {/* icons */}
-          <div className="*:bg-black *:rounded-full mt-5 flex gap-3 flex-wrap *:max-w-[80px] *:w-full *:max-h-[80px]  *:cursor-pointer">
+          <div className="*:bg-black *:rounded-full mt-5 flex gap-3 flex-wrap *:max-w-[80px] *:w-full *:max-h-[80px]  *:cursor-pointer transition-all *:duration-100">
           <NavLink to={'https://github.com/abhisheksooni'} target='_blank' className="bg-black p-3.5 lg:p-4  ">
               <img src={github} alt="" />
             </NavLink>
@@ -179,7 +179,7 @@ return(
             <NavLink to={'certificates'} className=' bg-black px-5 py-1 rounded-full flex gap-3'> <span className='hidden md:flex'>more. </span><MoveRight /></NavLink>
           </div>
 
-          <div className="lg:*:max-w-[320px] justify-start *:min-w-[200px] lg:*:min-w-[300px] *:cursor-pointer mt-6 *:rounded-xl flex gap-5  overflow-x-scroll hover:*:scale-[0.98]">
+          <div className="lg:*:max-w-[320px] justify-start *:min-w-[200px] lg:*:min-w-[300px] *:cursor-pointer mt-6 *:rounded-xl flex gap-5  overflow-x-scroll hover:*:scale-[0.98] transition-all *:duration-100">
             <div onClick={()=>{
               SetcertificateName(pwskill)
               SetcertificateShow(true)
@@ -232,11 +232,11 @@ return(
             <div className={` h-[11px] w-[11px] bg-color3 lg:mt-[4.5px] rounded-full`}></div>
             <span className="font-semibold text-2xl  ">Projects </span>
           </div>
-          <div className="mt-8 ">
-            <Projects Name='FORCE Brand'  projectImage={Project1} projectlink='https://e-commerce-mauve-omega.vercel.app/' />
-            <Projects />
-            <Projects />
-            <Projects />
+          <div className="mt-8 flex flex-wrap w-[100%] gap-6  ">
+            <Projects Name='FORCE Brand'  projectImage={Project1} projectlink='https://force-brand.vercel.app/' />
+            <Projects Name='Gym Mate' projectImage={Project2} projectlink='https://gym-mate-ab.vercel.app/' />
+            {/* <Projects /> */}
+            {/* <Projects /> */}
           </div>
         </div>
       </section>

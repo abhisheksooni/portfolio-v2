@@ -26,6 +26,7 @@ import webDesign from './certificates/79f89a47ad214256a0a1bd6dd43f5c04_page-0001
 
 // Projects
 import Project1 from './Projects/e-commerce-1.png'
+import Project2 from './Projects/gym-mate.png'
 
 
 
@@ -59,4 +60,5 @@ webDesign,
 
 // projects
 Project1,
+Project2,
 }
