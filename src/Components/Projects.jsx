@@ -7,7 +7,7 @@ function Projects({ projectImage = semp, Name = 'add project name', skillsNumber
   return (
     <>
       <Link target='_blank' to={projectlink} className='xl:max-w-[48%]' >
-        <div className=" overflow-y-hidden relative rounded-3xl bg-color2/40 md:px-3 md:py-3 p-1.5 mb-3 md:mb-8">
+        <div className=" overflow-y-hidden relative rounded-3xl bg-color2/40 md:px-3 md:py-3 p-1.5 mb-3 md:mb-8 hover:scale-[0.98] transition-all duration-100 ease-in">
           {/* project images */}
           <img src={projectImage} className='w-[100%] rounded-3xl ' alt="" />
 

@@ -40,7 +40,7 @@ return(
 
   return (
     <>
-    <section className=' relative lg:flex w-full gap-10 max-w-[1800px] md:px-[40px] xl:px-[80px] lg:py-4 mx-auto'>
+    <section className=' relative lg:flex w-full gap-10 max-w-[1800px] md:px-[40px] xl:px-[80px] lg:py-4 mx-auto '>
       {/* avtar box mobile */}
       <div className=" flex justify-center text-color3 mt-20 mb-10 lg:hidden">
         <div className="flex flex-col items-center  py-3">
@@ -54,7 +54,7 @@ return(
         </div>
       </div>
       {/* Left box pc*/}
-      <section className='hidden lg:inline-block stickyd top-16 z-50 *:mb-5 *:bg-color2/40 w-[33%] text-color3 *:rounded-3xl'>
+      <section className='hidden lg:inline-block stickyd top-16 z-50 *:mb-5 *:bg-color2/40 w-[33%] text-color3 *:rounded-3xl hover:*:scale-[0.98] *:transition-all  *:duration-100 ease-in'>
         {/* Name / */}
         <div className="  px-7">
           <div className=" flex items-center justify-center gap-9 py-4">
@@ -142,7 +142,7 @@ return(
       {/* Right box */}
       <section className='lg:w-[65%] text-color3 mx-5 *:mx-auto lg:mx-auto '>
         {/* About us */}
-        <div className=" hidden md:grid bg-color2/40 lg:w-[95%] rounded-3xl px-5 lg:px-10 py-6 mb-10 mx-auto ">
+        <div className=" hidden md:grid bg-color2/40 lg:w-[95%] rounded-3xl px-5 lg:px-10 py-6 mb-10 mx-auto hover:scale-[0.98] transition-all duration-100 ease-in">
           <div className="lg:pl-4 flex items-center gap-4">
             <div className={` h-[11px] w-[11px] bg-color3 flex lg:mt-[4.5px] rounded-full`}></div>
             <div className=" flex justify-between w-full">
