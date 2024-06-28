@@ -36,7 +36,7 @@ function CertificatesShow() {
 
    {/* certificate showing section */}
 
-<section  className={`${certificateShow?'flex overflow-y-hidden':'hidden'}  flex-col  absolute p-5 top-0 z-[1000] bg-color2/40 backdrop-blur-md  lw-[100%] h-[120%] lg:h-[100%]`}>
+<section  className={`${certificateShow?'flex overflow-y-hidden':'hidden'}  flex-col  absolute p-5 top-0 z-[1000] bg-color2/40 backdrop-blur-md  lg:w-[100%] h-[120%] lg:h-[100%]`}>
     <div onClick={()=>SetcertificateShow(false)} className="absolute right-5 cursor-pointer"><X size={50} color='red'/></div>
  
     <img src={certificateName} className='max-w-[1125px] w-full  mx-auto mt-[35vh] md:mt-12 ' alt="" />
