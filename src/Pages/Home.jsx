@@ -75,7 +75,7 @@ return(
           <div className="mt-5 text-lg bg-black py-3 px-4 rounded-2xl">
             <p className='font-semibold'>Full Stack Developer ( Sigma Bach 1.0 ) </p>
             <p>PW Skills</p>
-            <p>Jan-2023 to October-2023</p>
+{/*             <p>Jan-2023 to October-2023</p> */}
           </div>
           <div className="mt-3 text-lg bg-black py-3 px-4 rounded-2xl">
             <p className='font-semibold'>BCA </p>
