@@ -27,6 +27,7 @@ const skill = [
         Name:"tailwindCss",
         icon:tailwindcss,
     },
+  
 ]
 
   return (
